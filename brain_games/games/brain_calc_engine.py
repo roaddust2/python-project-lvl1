@@ -1,3 +1,5 @@
+from brain_games.brain_engine import welcome_user
+from brain_games.brain_engine import start_script
 import prompt
 import random
 import time
@@ -20,11 +22,8 @@ def calc(num_1, num_2, operator):
 
 # main function
 def calc_game():
-    name = prompt.string('May I have your name? ')
-    time.sleep(0.5)
-    print('Hello, ' + name + '!')
-    time.sleep(0.5)
-    print('What is the result of the expression?')
+    welcome_user()
+    name= start_script('brain_calc')
     counter = 1
     while counter <= 3:
         num_1 = random.randint(1, 99)
