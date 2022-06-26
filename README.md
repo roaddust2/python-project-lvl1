@@ -5,3 +5,7 @@
 brain-even:
 https://asciinema.org/a/JZhM0HNOo8RnyXiKEmzYpFwjf
 [![asciicast](https://asciinema.org/a/JZhM0HNOo8RnyXiKEmzYpFwjf.svg)](https://asciinema.org/a/JZhM0HNOo8RnyXiKEmzYpFwjf)
+
+brain-calc:
+https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb
+[![asciicast](https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb.svg)](https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb)
