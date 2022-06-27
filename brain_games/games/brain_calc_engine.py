@@ -1,4 +1,3 @@
-from brain_games.brain_engine import welcome_user
 from brain_games.brain_engine import start_script
 import prompt
 import random
@@ -22,8 +21,8 @@ def calc(num_1, num_2, operator):
 
 # main function
 def calc_game():
-    welcome_user()
-    name= start_script('brain_calc')
+    game_instruction = 'What is the result of the expression?'
+    name = start_script(game_instruction)
     counter = 1
     while counter <= 3:
         num_1 = random.randint(1, 99)

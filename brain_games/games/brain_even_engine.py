@@ -1,4 +1,3 @@
-from brain_games.brain_engine import welcome_user
 from brain_games.brain_engine import start_script
 import prompt
 import random
@@ -19,8 +18,8 @@ def is_even(num):
 
 # main function
 def even_game():
-    welcome_user()
-    name= start_script('brain_even')
+    game_instruction = 'Answer "yes" if the number is even, otherwise answer "no".'
+    name = start_script(game_instruction)
     counter = 1
     while counter <= 3:
         question = random.randint(1, 99)
