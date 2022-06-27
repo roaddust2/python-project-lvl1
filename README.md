@@ -9,3 +9,7 @@ https://asciinema.org/a/JZhM0HNOo8RnyXiKEmzYpFwjf
 brain-calc:
 https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb
 [![asciicast](https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb.svg)](https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb)
+
+brain-gcd:
+https://asciinema.org/a/m9uYGdBcj0VyVLsWLpe4ILm97
+[![asciicast](https://asciinema.org/a/m9uYGdBcj0VyVLsWLpe4ILm97.svg)](https://asciinema.org/a/m9uYGdBcj0VyVLsWLpe4ILm97)
