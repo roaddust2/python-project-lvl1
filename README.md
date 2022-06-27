@@ -11,8 +11,8 @@ https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb
 [![asciicast](https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb.svg)](https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb)
 
 brain-gcd:
-https://asciinema.org/a/m9uYGdBcj0VyVLsWLpe4ILm97
-[![asciicast](https://asciinema.org/a/m9uYGdBcj0VyVLsWLpe4ILm97.svg)](https://asciinema.org/a/m9uYGdBcj0VyVLsWLpe4ILm97)
+https://asciinema.org/a/i30mSBEC5HXuaNBBIpHcaXfg6
+[![asciicast](https://asciinema.org/a/i30mSBEC5HXuaNBBIpHcaXfg6.svg)](https://asciinema.org/a/i30mSBEC5HXuaNBBIpHcaXfg6)
 
 brain-progression:
 https://asciinema.org/a/pJi9SNEPsrLVqI6YGGWShjWv6
