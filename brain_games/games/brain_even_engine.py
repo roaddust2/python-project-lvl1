@@ -18,7 +18,7 @@ def is_even(num):
 
 # main function
 def even_game():
-    game_instruction = 'Answer "yes" if the number is even, otherwise answer "no".'
+    game_instruction = 'Answer "yes" if the number is even, otherwise answer "no".'  # noqa: E501
     name = start_script(game_instruction)
     counter = 1
     while counter <= 3:
