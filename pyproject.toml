@@ -3,6 +3,8 @@ name = "hexlet-code"
 version = "0.2.0"
 description = "Small console util with five games to train your brain"
 authors = ["roaddust2 <roaddust2@yahoo.com>"]
+classifiers = ["Topic :: Games/Entertainment"]
+repository = "https://github.com/roaddust2/python-project-lvl1"
 packages = [
   { include = "brain_games" },
 ]
