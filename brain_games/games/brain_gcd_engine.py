@@ -1,14 +1,14 @@
 from brain_games.brain_engine import start_script
-import prompt
+from brain_games.brain_engine import cycle
 import random
-import time
 
 
-# user's name
+# User name
 name = ''
 
 
-# gcd check
+# Helper
+#   Checking gcd of two numbers
 def gcd(num_1, num_2):
     while num_1 != 0 and num_2 != 0:
         if num_1 > num_2:
@@ -18,7 +18,7 @@ def gcd(num_1, num_2):
     return num_1 + num_2
 
 
-# main function
+# Main function
 def gcd_game():
     game_instruction = 'Find the greatest common divisor of given numbers.'
     name = start_script(game_instruction)
@@ -26,27 +26,7 @@ def gcd_game():
     while counter <= 3:
         num_1 = random.randint(1, 99)
         num_2 = random.randint(1, 99)
-        correct_answer = gcd(num_1, num_2)
-        time.sleep(0.5)
-        print(f'Question: {str(num_1)} {str(num_2)}')
-        time.sleep(0.5)
-        answer = prompt.string('Your answer: ')
-        try:
-            if int(answer) != correct_answer:
-                time.sleep(0.5)
-                return print(f'''\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'
-Let's try again, {name}!''')
-            elif int(answer) == correct_answer and counter == 3:
-                time.sleep(0.5)
-                print('Correct!')
-                time.sleep(0.5)
-                return print(f'Congratulations, {name}!')
-            else:
-                counter += 1
-                time.sleep(0.5)
-                print('Correct!')
-        except ValueError:
-            time.sleep(0.5)
-            return print(f'''\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'
-Let's try again, {name}!''')
+        question = f'{str(num_1)} {str(num_2)}'
+        correct_answer = str(gcd(num_1, num_2))
+        counter = cycle(name, question, correct_answer, counter)
     return

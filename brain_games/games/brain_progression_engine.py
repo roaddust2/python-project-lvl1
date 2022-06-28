@@ -1,14 +1,14 @@
 from brain_games.brain_engine import start_script
-import prompt
+from brain_games.brain_engine import cycle
 import random
-import time
 
 
-# user's name
+# User name
 name = ''
 
 
-# progression helper
+# Helper
+#   Generating progression list
 def progression(num, diff):
     output = [num]
     limit = 10
@@ -20,7 +20,8 @@ def progression(num, diff):
     return output
 
 
-# progression_list to string helper
+# Helper
+#   Converting progression list to string for question
 def progression_to_string(x_list, space):
     output = ''
     space = space
@@ -32,7 +33,7 @@ def progression_to_string(x_list, space):
     return output
 
 
-# main function
+# Main function
 def progression_game():
     game_instruction = 'What number is missing in the progression?'
     name = start_script(game_instruction)
@@ -41,29 +42,9 @@ def progression_game():
         num_1 = random.randint(1, 10)
         num_2 = random.randint(1, 10)
         progression_full = progression(num_1, num_2)
-        space = random.randint(0, 9)
-        progression_string = progression_to_string(progression_full, space)
-        correct_answer = progression_full[space]
-        time.sleep(0.5)
-        print(f'Question: {progression_string}')
-        time.sleep(0.5)
-        answer = prompt.string('Your answer: ')
-        try:
-            if int(answer) != progression_full[space]:
-                time.sleep(0.5)
-                return print(f'''\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'
-Let's try again, {name}!''')
-            elif int(answer) == progression_full[space] and counter == 3:
-                time.sleep(0.5)
-                print('Correct!')
-                time.sleep(0.5)
-                return print(f'Congratulations, {name}!')
-            else:
-                counter += 1
-                time.sleep(0.5)
-                print('Correct!')
-        except ValueError:
-            time.sleep(0.5)
-            return print(f'''\'{answer}\' is wrong answer ;(. Correct answer was \'{correct_answer}\'
-Let's try again, {name}!''')
+        space = random.randint(1, 10)
+        question = progression_to_string(progression_full, space)
+        correct_answer = str(progression_full[space])
+        counter = cycle(name, question, correct_answer, counter)
+        counter += 1
     return
