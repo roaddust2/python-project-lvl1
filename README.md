@@ -41,6 +41,7 @@ https://asciinema.org/a/vv1YKVdc6LUVbvtJePPdc3BZ9
 
 ### Getting started
   **Install:**
+  https://asciinema.org/a/fDZKsrE7fSJxHohDLlGMkgjNW
   ```sh
   sudo apt install python3-pip
   python -m pip install --user git+https://github.com/roaddust2/python-project-lvl1.git
