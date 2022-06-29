@@ -23,8 +23,7 @@ def even_game():
     counter = 1
     while counter <= 3:
         num = random.randint(1, 99)
-        question = str(num)
         correct_answer = is_even(num)
-        counter = cycle(name, question, correct_answer, counter)
+        counter = cycle(name, num, correct_answer, counter)
         counter += 1
     return

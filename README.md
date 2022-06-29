@@ -6,7 +6,7 @@
 This is small console util written on Python with five games to train your brain. After game start, it will ask your name, after that question will be given. There are three rounds, after one mistake the game will be OVER. Goodluck!
 
 **Games list:**
-* brain-even - answer is given nuber even or not (yes/no)
+* brain-even - answer is given number even or not (yes/no)
 * brain-calc - calculate an expression
 * brain-gcd - find greatest common divisor
 * brain-progression - find the missing number of progression
