@@ -29,4 +29,5 @@ def gcd_game():
         question = f'{str(num_1)} {str(num_2)}'
         correct_answer = str(gcd(num_1, num_2))
         counter = cycle(name, question, correct_answer, counter)
+        counter += 1
     return
