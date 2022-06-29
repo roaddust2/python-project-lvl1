@@ -13,7 +13,7 @@ def progression(num, diff):
     output = [num]
     limit = 10
     counter = 1
-    while counter < limit:
+    while counter <= limit:
         output.append(num + diff)
         num += diff
         counter += 1
