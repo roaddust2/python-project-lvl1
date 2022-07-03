@@ -16,6 +16,7 @@ def play(game):
     print(f'Hello, {name}!')
     print(game.RULE)
     counter = 1
+
     while counter <= ROUNDS:
         question, correct_answer = game.generate_question_and_answer()
         print(f'Question: {question}')
