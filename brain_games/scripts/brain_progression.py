@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.brain_progression_engine import progression_game
+from brain_games import brain_engine
+from brain_games.games import brain_progression_engine
 
 
 def main():
-    progression_game()
+    brain_engine.play(brain_progression_engine)
     return
 
 

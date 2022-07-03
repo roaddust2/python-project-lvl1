@@ -1,19 +1,16 @@
-from brain_games.brain_engine import start_script
-from brain_games.brain_engine import cycle
 import random
 
 
-# User name
-name = ''
+RULE = 'What number is missing in the progression?'
+PROGRESSION_LIMIT = 10
 
 
 # Helper
 #   Generating progression list
-def progression(num, diff):
+def generate_progression(num, diff):
     output = [num]
-    limit = 10
     counter = 1
-    while counter <= limit:
+    while counter <= PROGRESSION_LIMIT:
         output.append(num + diff)
         num += diff
         counter += 1
@@ -22,7 +19,7 @@ def progression(num, diff):
 
 # Helper
 #   Converting progression list to string for question
-def progression_to_string(x_list, space):
+def convert_list_to_string(x_list, space):
     output = ''
     space = space
     for num in x_list:
@@ -34,17 +31,11 @@ def progression_to_string(x_list, space):
 
 
 # Main function
-def progression_game():
-    game_instruction = 'What number is missing in the progression?'
-    name = start_script(game_instruction)
-    counter = 1
-    while counter <= 3:
-        num_1 = random.randint(1, 10)
-        num_2 = random.randint(1, 10)
-        progression_full = progression(num_1, num_2)
-        space = random.randint(1, 10)
-        question = progression_to_string(progression_full, space)
-        correct_answer = str(progression_full[space])
-        counter = cycle(name, question, correct_answer, counter)
-        counter += 1
-    return
+def generate_question_and_answer():
+    num_1 = random.randint(1, 10)
+    num_2 = random.randint(1, 10)
+    progression_full = generate_progression(num_1, num_2)
+    space = random.randint(1, 10)
+    question = convert_list_to_string(progression_full, space)
+    correct_answer = str(progression_full[space])
+    return question, correct_answer

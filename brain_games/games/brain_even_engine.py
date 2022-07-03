@@ -1,15 +1,12 @@
-from brain_games.brain_engine import start_script
-from brain_games.brain_engine import cycle
 import random
 
 
-# User name
-name = ''
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 # Helper
 #   Checking is numer even (yes/no) in string output
-def is_even(num):
+def check_is_even(num):
     if num % 2 == 0:
         return 'yes'
     else:
@@ -17,13 +14,7 @@ def is_even(num):
 
 
 # Main function
-def even_game():
-    game_instruction = 'Answer "yes" if the number is even, otherwise answer "no".'  # noqa: E501
-    name = start_script(game_instruction)
-    counter = 1
-    while counter <= 3:
-        num = random.randint(1, 99)
-        correct_answer = is_even(num)
-        counter = cycle(name, num, correct_answer, counter)
-        counter += 1
-    return
+def generate_question_and_answer():
+    question = random.randint(1, 99)
+    correct_answer = check_is_even(question)
+    return question, correct_answer

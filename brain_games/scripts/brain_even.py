@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.brain_even_engine import even_game
+from brain_games import brain_engine
+from brain_games.games import brain_even_engine
 
 
 def main():
-    even_game()
+    brain_engine.play(brain_even_engine)
     return
 
 
