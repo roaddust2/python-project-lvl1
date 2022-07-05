@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.2.1"
+version = "0.2.2"
 description = "Small console util with five games to train your brain"
 authors = ["roaddust2 <roaddust2@yahoo.com>"]
 classifiers = ["Topic :: Games/Entertainment"]
