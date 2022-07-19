@@ -5,12 +5,11 @@ RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def find_gcd(num_1, num_2):
-    while num_1 != 0 and num_2 != 0:
-        if num_1 > num_2:
-            num_1 = num_1 % num_2
-        else:
-            num_2 = num_2 % num_1
-    return num_1 + num_2
+    if num_1 < num_2:
+        num_1, num_2 = num_2,num_1
+    while num_2 != 0:
+        num_1, num_2 = num_2, num_1 % num_2
+    return num_1
 
 
 def generate_question_and_answer():
