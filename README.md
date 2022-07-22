@@ -15,33 +15,11 @@ This is small console util written on Python with five games to train your brain
 <details>
   <summary>Examples</summary>
 
-brain-even:
-https://asciinema.org/a/JZhM0HNOo8RnyXiKEmzYpFwjf
-[![asciicast](https://asciinema.org/a/JZhM0HNOo8RnyXiKEmzYpFwjf.svg)](https://asciinema.org/a/JZhM0HNOo8RnyXiKEmzYpFwjf)
-
-brain-calc:
-https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb
-[![asciicast](https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb.svg)](https://asciinema.org/a/JJUkioSGJOcHdZAWUj61gKlDb)
-
-brain-gcd:
-https://asciinema.org/a/i30mSBEC5HXuaNBBIpHcaXfg6
-[![asciicast](https://asciinema.org/a/i30mSBEC5HXuaNBBIpHcaXfg6.svg)](https://asciinema.org/a/i30mSBEC5HXuaNBBIpHcaXfg6)
-
-brain-progression:
-https://asciinema.org/a/pJi9SNEPsrLVqI6YGGWShjWv6
-[![asciicast](https://asciinema.org/a/pJi9SNEPsrLVqI6YGGWShjWv6.svg)](https://asciinema.org/a/pJi9SNEPsrLVqI6YGGWShjWv6)
-
-brain-prime:
-https://asciinema.org/a/vv1YKVdc6LUVbvtJePPdc3BZ9
-[![asciicast](https://asciinema.org/a/vv1YKVdc6LUVbvtJePPdc3BZ9.svg)](https://asciinema.org/a/vv1YKVdc6LUVbvtJePPdc3BZ9)
-</details>
-
 **Used packages:**
 * prompt (https://github.com/sfischer13/python-prompt)
 
 ### Getting started
   **Install:**
-  https://asciinema.org/a/fDZKsrE7fSJxHohDLlGMkgjNW
   ```sh
   sudo apt install python3-pip
   python -m pip install --user git+https://github.com/roaddust2/python-project-lvl1.git
