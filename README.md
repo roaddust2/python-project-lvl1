@@ -12,11 +12,8 @@ This is small console util written on Python with five games to train your brain
 * brain-progression - find the missing number of progression
 * brain-prime - answer is given number prime or not (yes/no)
 
-<details>
-  <summary>Examples</summary>
-
 **Used packages:**
-* prompt (https://github.com/sfischer13/python-prompt)
+* [prompt](https://github.com/sfischer13/python-prompt)
 
 ### Getting started
   **Install:**
